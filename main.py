@@ -55,4 +55,11 @@ def save_image():
             watermarked_img.save(save_path)
             print("Image saved at:", save_path)
 
+# ---------------- UI ----------------
+root = Tk()
+root.title("🔥 Add a Watermark Like a Boss 🔥")
+root.geometry("550x500")
+root.config(bg="#f0f0ff")
+
+
 
