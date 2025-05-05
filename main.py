@@ -47,3 +47,12 @@ def choose_image():
     img_label.config(image=tk_img)
     img_label.image = tk_img
 
+def save_image():
+    if watermarked_img:
+        save_path = filedialog.asksaveasfilename(defaultextension=".jpg",
+                                                filetypes=[("JPEG files", "*.jpg"), ("PNG files", "*.png")])
+        if save_path:
+            watermarked_img.save(save_path)
+            print("Image saved at:", save_path)
+
+
