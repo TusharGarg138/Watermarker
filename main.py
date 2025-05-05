@@ -70,4 +70,13 @@ selected_color.set("White")
 img_label = Label(root, bg="#f0f0ff")
 img_label.pack(pady=10)
 
+# Text input
+Label(root, text="Enter Watermark Text:", bg="#f0f0ff", font=("Arial", 12)).pack()
+text_entry = Entry(root, width=30, font=("Arial", 12))
+text_entry.pack(pady=5)
+
+# Color dropdown
+Label(root, text="Choose Text Color:", bg="#f0f0ff", font=("Arial", 12)).pack()
+color_menu = OptionMenu(root, selected_color, *colors.keys())
+color_menu.pack(pady=5)
 
