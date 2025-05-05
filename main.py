@@ -62,4 +62,12 @@ root.geometry("550x500")
 root.config(bg="#f0f0ff")
 
 
+# Default selection
+selected_color = StringVar()
+selected_color.set("White")
+
+# Image preview area
+img_label = Label(root, bg="#f0f0ff")
+img_label.pack(pady=10)
+
 
