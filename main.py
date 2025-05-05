@@ -80,3 +80,8 @@ Label(root, text="Choose Text Color:", bg="#f0f0ff", font=("Arial", 12)).pack()
 color_menu = OptionMenu(root, selected_color, *colors.keys())
 color_menu.pack(pady=5)
 
+# Buttons
+Button(root, text="Choose Image", command=choose_image, bg="#007acc", fg="white", font=("Arial", 12)).pack(pady=10)
+Button(root, text="Save Watermarked Image", command=save_image, bg="#28a745", fg="white", font=("Arial", 12)).pack()
+
+
