@@ -84,4 +84,4 @@ color_menu.pack(pady=5)
 Button(root, text="Choose Image", command=choose_image, bg="#007acc", fg="white", font=("Arial", 12)).pack(pady=10)
 Button(root, text="Save Watermarked Image", command=save_image, bg="#28a745", fg="white", font=("Arial", 12)).pack()
 
-
+root.mainloop()
